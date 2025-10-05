@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-10-05T13:32:33.744885",
+  "total_tests": 19,
+  "total_passed": 19,
+  "total_failed": 0,
+  "success_rate": 100.0,
+  "suite_results": [
+    {
+      "name": "Core Simulation Engine",
+      "passed": 19,
+      "total": 19,
+      "success_rate": 100.0,
+      "failures": []
+    },
+    {
+      "name": "API Endpoints",
+      "passed": 0,
+      "total": 0,
+      "success_rate": 0,
+      "failures": [
+        "Import failed: attempted relative import beyond top-level package"
+      ]
+    },
+    {
+      "name": "Dashboard Components",
+      "passed": 0,
+      "total": 0,
+      "success_rate": 0,
+      "failures": [
+        "Import failed: attempted relative import beyond top-level package"
+      ]
+    }
+  ],
+  "failures": []
+}

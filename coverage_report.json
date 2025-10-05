@@ -1,0 +1,254 @@
+{
+  "timestamp": "2025-10-05T13:33:11.368439",
+  "source_files": [
+    {
+      "file": "src/core\\simulation_engine.py",
+      "functions": [
+        "__init__",
+        "_initialize_models",
+        "simulate_mission",
+        "_generate_time_points",
+        "_predict_health_at_time",
+        "_calculate_risk_factors",
+        "_generate_interventions",
+        "_assess_risks",
+        "_generate_recommendations",
+        "_calculate_accuracy",
+        "predict",
+        "predict",
+        "predict",
+        "predict",
+        "predict",
+        "predict",
+        "predict",
+        "predict"
+      ],
+      "classes": [
+        "HealthSimulationEngine",
+        "MuscleAtrophyModel",
+        "BoneLossModel",
+        "CardiovascularModel",
+        "ImmuneFunctionModel",
+        "CognitiveModel",
+        "DNADamageModel",
+        "StressModel",
+        "SleepQualityModel"
+      ],
+      "total_functions": 18,
+      "total_classes": 9
+    },
+    {
+      "file": "src/data\\astronaut_models.py",
+      "functions": [
+        "create_sample_astronaut",
+        "create_sample_mission",
+        "__post_init__",
+        "get_overall_health_score",
+        "get_health_status",
+        "get_health_deterioration",
+        "get_mission_success_probability"
+      ],
+      "classes": [
+        "MissionType",
+        "HealthStatus",
+        "MissionParameters",
+        "HealthMetrics",
+        "AstronautProfile",
+        "HealthPrediction",
+        "SimulationResult",
+        "Intervention"
+      ],
+      "total_functions": 7,
+      "total_classes": 8
+    },
+    {
+      "file": "src/models\\recommendation_engine.py",
+      "functions": [
+        "__init__",
+        "_initialize_interventions",
+        "_initialize_weights",
+        "generate_recommendations",
+        "_analyze_health_metrics",
+        "_calculate_muscle_risk",
+        "_calculate_bone_risk",
+        "_calculate_cardio_risk",
+        "_calculate_immune_risk",
+        "_calculate_cognitive_risk",
+        "_calculate_dna_risk",
+        "_calculate_stress_risk",
+        "_calculate_sleep_risk",
+        "_get_recommendations_for_metric",
+        "_get_recommendations_for_risk",
+        "_adjust_recommendation_for_mission",
+        "_optimize_recommendations",
+        "_calculate_optimization_score",
+        "generate_mission_plan",
+        "calculate_intervention_impact"
+      ],
+      "classes": [
+        "InterventionType",
+        "Priority",
+        "Recommendation",
+        "RecommendationEngine"
+      ],
+      "total_functions": 20,
+      "total_classes": 4
+    },
+    {
+      "file": "src/api\\main.py",
+      "functions": [],
+      "classes": [
+        "MissionParametersRequest",
+        "HealthMetricsRequest",
+        "AstronautRequest",
+        "SimulationResponse",
+        "HealthPredictionResponse"
+      ],
+      "total_functions": 0,
+      "total_classes": 5
+    },
+    {
+      "file": "src/dashboard\\app.py",
+      "functions": [
+        "main",
+        "display_welcome_screen",
+        "display_simulation_results",
+        "display_health_timeline",
+        "display_3d_avatar",
+        "display_risk_assessment",
+        "display_recommendations"
+      ],
+      "classes": [],
+      "total_functions": 7,
+      "total_classes": 0
+    }
+  ],
+  "test_files": [
+    {
+      "file": "tests\\test_api_endpoints.py",
+      "functions": [
+        "setup_method",
+        "test_root_endpoint",
+        "test_health_check_endpoint",
+        "test_sample_data_endpoint",
+        "test_mission_types_endpoint",
+        "test_health_score_calculation",
+        "test_simulation_endpoint_data_validation",
+        "test_mission_parameters_request_validation",
+        "test_health_metrics_request_validation",
+        "test_astronaut_request_validation",
+        "test_end_to_end_api_flow",
+        "test_api_error_handling"
+      ],
+      "classes": [
+        "TestAPIEndpoints",
+        "TestAPIDataModels",
+        "TestAPIIntegration"
+      ],
+      "total_functions": 12,
+      "total_classes": 3
+    },
+    {
+      "file": "tests\\test_dashboard.py",
+      "functions": [
+        "setup_method",
+        "test_health_timeline_data_preparation",
+        "test_3d_avatar_health_indicators",
+        "test_risk_assessment_categorization",
+        "test_recommendations_structure",
+        "test_mission_success_probability_calculation",
+        "setup_method",
+        "test_health_timeline_data_structure",
+        "test_risk_heatmap_data_preparation",
+        "test_health_metrics_trends",
+        "test_dashboard_data_flow",
+        "test_dashboard_performance",
+        "test_dashboard_error_handling"
+      ],
+      "classes": [
+        "TestDashboardComponents",
+        "TestDashboardVisualizations",
+        "TestDashboardIntegration"
+      ],
+      "total_functions": 13,
+      "total_classes": 3
+    },
+    {
+      "file": "tests\\test_simulation_engine.py",
+      "functions": [
+        "setup_method",
+        "test_simulation_initialization",
+        "test_mission_simulation",
+        "test_health_prediction_accuracy",
+        "test_mission_success_probability",
+        "test_risk_assessment",
+        "test_recommendations_generation",
+        "setup_method",
+        "test_recommendation_initialization",
+        "test_health_analysis",
+        "test_recommendation_generation",
+        "test_optimization_scoring",
+        "test_mission_plan_generation",
+        "test_health_metrics_validation",
+        "test_mission_parameters_validation",
+        "test_mission_parameters_invalid",
+        "test_astronaut_profile_creation",
+        "test_health_deterioration_calculation",
+        "test_end_to_end_simulation",
+        "test_performance_benchmarks",
+        "test_memory_usage"
+      ],
+      "classes": [
+        "TestHealthSimulationEngine",
+        "TestRecommendationEngine",
+        "TestDataModels",
+        "TestIntegration"
+      ],
+      "total_functions": 21,
+      "total_classes": 4
+    },
+    {
+      "file": "tests\\test_simulation_engine_simple.py",
+      "functions": [
+        "setup_method",
+        "test_simulation_initialization",
+        "test_mission_simulation",
+        "test_health_prediction_accuracy",
+        "test_mission_success_probability",
+        "test_risk_assessment",
+        "test_recommendations_generation",
+        "setup_method",
+        "test_recommendation_initialization",
+        "test_health_analysis",
+        "test_recommendation_generation",
+        "test_optimization_scoring",
+        "test_mission_plan_generation",
+        "test_health_metrics_validation",
+        "test_mission_parameters_validation",
+        "test_mission_parameters_invalid",
+        "test_astronaut_profile_creation",
+        "test_health_deterioration_calculation",
+        "test_end_to_end_simulation",
+        "test_performance_benchmarks",
+        "test_memory_usage"
+      ],
+      "classes": [
+        "TestHealthSimulationEngine",
+        "TestRecommendationEngine",
+        "TestDataModels",
+        "TestIntegration"
+      ],
+      "total_functions": 21,
+      "total_classes": 4
+    }
+  ],
+  "coverage_summary": {
+    "total_source_files": 5,
+    "total_test_files": 4,
+    "total_source_functions": 52,
+    "total_source_classes": 26,
+    "total_test_functions": 67,
+    "total_test_classes": 14,
+    "test_to_source_ratio": 1.2884615384615385
+  }
+}
